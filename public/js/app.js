@@ -4,6 +4,16 @@
 
   /* ── Topic Registry ── */
   const topicRegistry = {
+    fundamentals: {
+      id: 'fundamentals',
+      scenes: [FundScene1],
+      progressLabels: [
+        { zh: '四大招式', en: '4 Techniques' }
+      ],
+      sceneTitles: [
+        { zh: '密碼學四大核心招式', en: 'The 4 Core Techniques of Cryptography' }
+      ]
+    },
     certificate: {
       id: 'certificate',
       scenes: [Scene1, Scene2, Scene3, Scene4, Scene5],
@@ -57,7 +67,7 @@
   };
 
   /* ── State ── */
-  let currentTopicId = 'certificate';
+  let currentTopicId = 'fundamentals';
   let currentScene = 0;
   let currentStep = 0;
   let autoPlayInterval = null;
@@ -271,7 +281,7 @@
       if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); nextStep(); }
       else if (e.key === 'ArrowLeft') { e.preventDefault(); prevStep(); }
     });
-    initTopic('certificate');
+    initTopic('fundamentals');
   }
 
   if (document.readyState === 'loading') {
