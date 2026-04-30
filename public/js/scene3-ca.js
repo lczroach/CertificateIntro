@@ -1,6 +1,6 @@
 /* Scene 3: CA Authorization Process */
 const Scene3 = {
-  totalSteps: 6,
+  totalSteps: 7,
 
   steps: [
     {
@@ -26,6 +26,10 @@ const Scene3 = {
     {
       zh: '簽署完成！CA 將已簽署的憑證回傳給申請者。',
       en: 'Signing complete! The CA returns the signed certificate to the applicant.'
+    },
+    {
+      zh: '❗ 真實案例：2011 年荷蘭 CA 「DigiNotar」被駭客入侵，導致 500+ 假憑證被簽發（包含 google.com）。伊朗政府利用這些假憑證監控人民的 Gmail 通訊。各大瀏覽器緊急移除 DigiNotar，該公司隨後破產。這證明了 CA 的信任是整個憑證體系的核心 — 一旦 CA 被攻破，所有它簽發的憑證都不可信。',
+      en: '❗ Real-world case: In 2011, Dutch CA "DigiNotar" was hacked, resulting in 500+ fraudulent certificates (including google.com). The Iranian government used these fake certs to surveil citizens\' Gmail. All major browsers emergency-removed DigiNotar, and the company went bankrupt. This proves CA trust is the core of the entire certificate system — once a CA is compromised, all its issued certificates become untrustworthy.'
     }
   ],
 
@@ -135,6 +139,48 @@ const Scene3 = {
           </span>
         </div>
       </div>
+
+      <!-- DigiNotar Incident -->
+      <div id="s3-diginotar" style="opacity:0;margin-top:12px;margin-left:5px">
+        <div style="padding:12px 16px;background:rgba(239,68,68,0.06);border:1px solid var(--accent-red);border-radius:12px">
+          <div style="display:flex;align-items:flex-start;gap:12px">
+            <div style="font-size:28px;flex-shrink:0">⚠️</div>
+            <div style="flex:1">
+              <div style="font-size:13px;font-weight:700;color:var(--accent-red);margin-bottom:6px">
+                <span class="zh">真實案例：DigiNotar 事件 (2011)</span>
+                <span class="en">Real Case: DigiNotar Incident (2011)</span>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:6px;font-size:11px">
+                <div style="display:flex;align-items:flex-start;gap:8px">
+                  <span style="color:var(--accent-red);flex-shrink:0">🔴</span>
+                  <div>
+                    <span class="zh" style="color:var(--text-primary)">荷蘭 CA 「DigiNotar」被駭客入侵，簽發了 500+ 張假憑證（包含 google.com）</span>
+                    <span class="en" style="color:var(--text-primary)">Dutch CA "DigiNotar" was hacked, 500+ fraudulent certs issued (incl. google.com)</span>
+                  </div>
+                </div>
+                <div style="display:flex;align-items:flex-start;gap:8px">
+                  <span style="color:var(--accent-red);flex-shrink:0">🔴</span>
+                  <div>
+                    <span class="zh" style="color:var(--text-primary)">伊朗政府利用假憑證監控人民的 Gmail 通訊（中間人攻擊 MITM）</span>
+                    <span class="en" style="color:var(--text-primary)">Iranian gov used fake certs to surveil citizens' Gmail (MITM attack)</span>
+                  </div>
+                </div>
+                <div style="display:flex;align-items:flex-start;gap:8px">
+                  <span style="color:var(--accent-red);flex-shrink:0">🔴</span>
+                  <div>
+                    <span class="zh" style="color:var(--text-primary)">各大瀏覽器緊急移除 DigiNotar 信任，該公司隨後破產</span>
+                    <span class="en" style="color:var(--text-primary)">All major browsers emergency-removed DigiNotar; company went bankrupt</span>
+                  </div>
+                </div>
+              </div>
+              <div style="margin-top:8px;padding:6px 10px;background:rgba(239,68,68,0.08);border-radius:6px;font-size:11px">
+                <span class="zh" style="color:var(--accent-red);font-weight:600">💡 教訓：CA 的信任是整個憑證體系的核心 — 一旦 CA 被攻破，所有它簽發的憑證都不可信。</span>
+                <span class="en" style="color:var(--accent-red);font-weight:600">💡 Lesson: CA trust is the foundation — once compromised, all its certificates become untrustworthy.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     `;
   },
 
@@ -194,6 +240,11 @@ const Scene3 = {
         arrowLeft.classList.add('anim-fade-in-left');
         complete.style.opacity = '1';
         complete.classList.add('anim-fade-in-up');
+        break;
+      case 6:
+        const diginotar = document.getElementById('s3-diginotar');
+        diginotar.style.opacity = '1';
+        diginotar.classList.add('anim-fade-in-up');
         break;
     }
   }
