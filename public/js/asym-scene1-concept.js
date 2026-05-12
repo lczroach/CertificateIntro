@@ -58,12 +58,12 @@ const AsymScene1 = {
               <span class="zh">🔒 加密模式 — 保密性</span>
               <span class="en">Encryption Mode — Confidentiality</span>
             </div>
-            <div style="display:flex;align-items:center;gap:6px;font-size:10px;flex-wrap:wrap">
-              <span style="padding:2px 6px;background:rgba(16,185,129,0.1);border:1px solid var(--accent-green);border-radius:4px;color:var(--accent-green)">🔑 對方 Public Key</span>
+            <div style="display:flex;align-items:center;gap:6px;font-size:10px;flex-wrap:wrap;justify-content:center">
+              <span style="padding:2px 6px;background:rgba(16,185,129,0.1);border:1px solid var(--accent-green);border-radius:4px;color:var(--accent-green)">🔑 <span class="zh">公鑰</span><span class="en">Public Key</span></span>
               <span style="color:var(--text-dim)">加密 →</span>
               <span style="padding:2px 6px;background:rgba(59,130,246,0.1);border:1px solid var(--accent-blue);border-radius:4px;color:var(--accent-blue)">🔒 <span class="zh">密文</span><span class="en">Ciphertext</span></span>
               <span style="color:var(--text-dim)">→</span>
-              <span style="padding:2px 6px;background:rgba(239,68,68,0.1);border:1px solid var(--accent-red);border-radius:4px;color:var(--accent-red)">🗝️ <span class="zh">自己 Private Key</span><span class="en">Own Private Key</span></span>
+              <span style="padding:2px 6px;background:rgba(239,68,68,0.1);border:1px solid var(--accent-red);border-radius:4px;color:var(--accent-red)">🗝️ <span class="zh">私鑰</span><span class="en">Private Key</span></span>
               <span style="color:var(--text-dim)"><span class="zh">解密</span><span class="en">Decrypt</span></span>
             </div>
           </div>
@@ -73,12 +73,12 @@ const AsymScene1 = {
               <span class="zh">✍️ 簽章模式 — 不可否認性</span>
               <span class="en">Signature Mode — Non-repudiation</span>
             </div>
-            <div style="display:flex;align-items:center;gap:6px;font-size:10px;flex-wrap:wrap">
-              <span style="padding:2px 6px;background:rgba(239,68,68,0.1);border:1px solid var(--accent-red);border-radius:4px;color:var(--accent-red)">🗝️ 自己 Private Key</span>
+            <div style="display:flex;align-items:center;gap:6px;font-size:10px;flex-wrap:wrap;justify-content:center">
+              <span style="padding:2px 6px;background:rgba(239,68,68,0.1);border:1px solid var(--accent-red);border-radius:4px;color:var(--accent-red)">🗝️ <span class="zh">私鑰</span><span class="en">Private Key</span></span>
               <span style="color:var(--text-dim)">簽章 →</span>
               <span style="padding:2px 6px;background:rgba(139,92,246,0.1);border:1px solid var(--accent-purple);border-radius:4px;color:var(--accent-purple)">📝 <span class="zh">簽章</span><span class="en">Signature</span></span>
               <span style="color:var(--text-dim)">→</span>
-              <span style="padding:2px 6px;background:rgba(16,185,129,0.1);border:1px solid var(--accent-green);border-radius:4px;color:var(--accent-green)">🔑 Public Key</span>
+              <span style="padding:2px 6px;background:rgba(16,185,129,0.1);border:1px solid var(--accent-green);border-radius:4px;color:var(--accent-green)">🔑 <span class="zh">公鑰</span><span class="en">Public Key</span></span>
               <span style="color:var(--text-dim)"><span class="zh">驗證</span><span class="en">Verify</span></span>
             </div>
           </div>
