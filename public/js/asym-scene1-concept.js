@@ -60,7 +60,7 @@ const AsymScene1 = {
             </div>
             <div style="display:flex;align-items:center;gap:6px;font-size:10px;flex-wrap:wrap;justify-content:center">
               <span style="padding:2px 6px;background:rgba(16,185,129,0.1);border:1px solid var(--accent-green);border-radius:4px;color:var(--accent-green)">🔑 <span class="zh">公鑰</span><span class="en">Public Key</span></span>
-              <span style="color:var(--text-dim)">加密 →</span>
+              <span style="color:var(--text-dim)"><span class="zh">加密</span><span class="en">Encrypt</span></span>
               <span style="padding:2px 6px;background:rgba(59,130,246,0.1);border:1px solid var(--accent-blue);border-radius:4px;color:var(--accent-blue)">🔒 <span class="zh">密文</span><span class="en">Ciphertext</span></span>
               <span style="color:var(--text-dim)">→</span>
               <span style="padding:2px 6px;background:rgba(239,68,68,0.1);border:1px solid var(--accent-red);border-radius:4px;color:var(--accent-red)">🗝️ <span class="zh">私鑰</span><span class="en">Private Key</span></span>
@@ -75,7 +75,7 @@ const AsymScene1 = {
             </div>
             <div style="display:flex;align-items:center;gap:6px;font-size:10px;flex-wrap:wrap;justify-content:center">
               <span style="padding:2px 6px;background:rgba(239,68,68,0.1);border:1px solid var(--accent-red);border-radius:4px;color:var(--accent-red)">🗝️ <span class="zh">私鑰</span><span class="en">Private Key</span></span>
-              <span style="color:var(--text-dim)">簽章 →</span>
+              <span style="color:var(--text-dim)"><span class="zh">簽章</span><span class="en">Sign</span> →</span>
               <span style="padding:2px 6px;background:rgba(139,92,246,0.1);border:1px solid var(--accent-purple);border-radius:4px;color:var(--accent-purple)">📝 <span class="zh">簽章</span><span class="en">Signature</span></span>
               <span style="color:var(--text-dim)">→</span>
               <span style="padding:2px 6px;background:rgba(16,185,129,0.1);border:1px solid var(--accent-green);border-radius:4px;color:var(--accent-green)">🔑 <span class="zh">公鑰</span><span class="en">Public Key</span></span>
